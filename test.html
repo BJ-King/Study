@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .ul_1{
+            color:aquamarine;
+        }
+        .fuck {
+            color:red;
+        }
+
+        .NV1 {
+            color:red;
+            text-decoration: none;
+            /*밑줄제거*/
+            display:block;
+            /*그라인전부사용*/
+            margin:auto;
+            /*위치중앙*/
+            
+        }
+
+        .NV2 {
+            color:red;
+            text-decoration: none;
+            display:inline;
+            /*텍스트크기만큼만사용*/
+
+        }
+        
+        h1{
+            text-align: center;
+        }
+        /*미디어쿼리(화면조정에 따른 크기변화)*/
+        @media (max-width:600px) {
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Test</title><!--페이지명-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    sam
+    <h1><!--h는 제목(글씨크기)-->
+    Hello world
+    </h1>
+    <br><!--줄넘김-->
+        <h3 style = "color: red">site</h3>
+        <ul class="fuck">
+            <li><strong>naver</strong></li>
+            <li><u>daum</u></li>
+            <li>google</li>
+            <!--strong->강조/u->밑줄-->
+        </ul>
+        <ul class="ul_1">
+            <li>naver1</li>
+            <li>daum1</li>
+            <li>google1</li>
+        </ul>
+
+        <button class="NV1">
+            <a href ="http://www.naver.com"
+            target="_blank" 
+            title="NAVER"
+            >
+            <!--
+                a href ->URL입력
+                target="_blank" ->새 창
+                title="" -> 간략설명
+            -->
+            naver 바로가기
+            </a>
+        </button>
+        <a href ="http://www.daum.net"
+            target="_blank" 
+            title="DAUM"
+            class="NV2">
+            daum 바로가기
+        </a>
+        
+
+    
+        
+        <br>
+        <iframe width="60%" height="500" src="https://www.youtube.com/embed/y8tMXi9C0bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+       
 </body>
+
 </html>
